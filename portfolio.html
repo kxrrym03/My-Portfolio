@@ -10,7 +10,12 @@
     <meta property="og:title" content="Kerry Kipsang - Data Scientist Portfolio">
     <meta property="og:description" content="Aspiring Data Scientist Portfolio showcasing skills in Python, machine learning, and data visualization">
     <meta property="og:type" content="website">
-    
+
+    <link rel="icon" type="image/png" href="K glowing.jpeg">
+    <link rel="apple-touch-icon" sizes="180x180" href="K glowing.jpeg">
+    <link rel="icon" type="image/png" sizes="32x32" href="K glowing.jpeg">
+    <link rel="icon" type="image/png" sizes="16x16" href="K glowing.jpeg">
+<meta name="theme-color" content="#0f172a">
     <link rel="stylesheet" href="portfolio.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -65,14 +70,17 @@
                     </svg>
                     Get In Touch
                 </button>
-                <button class="btn btn-outline">
+                
+                    <a href="Kerry Kipsang.pdf" download class="btn btn-outline">
                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
                         <polyline points="7,10 12,15 17,10"/>
                         <line x1="12" y1="15" x2="12" y2="3"/>
                     </svg>
                     Download CV
-                </button>
+                    </a>
+                
+            
             </div>
         </div>
         <button class="scroll-indicator" onclick="scrollToSection('#about')" aria-label="Scroll to about section">
@@ -826,7 +834,7 @@
                             </div>
                             <div>
                                 <p class="contact-label">Phone</p>
-                                <a href="tel:+254 741105222" class="contact-value">+254 741105222</a>
+                                <a href="tel:+254741105222" class="contact-value">+254 741105222</a>
                             </div>
                         </div>
                         
@@ -872,38 +880,29 @@
                 </div>
                 
                 <div class="contact-form-card">
-                    <h3 class="form-title">Send a Message</h3>
-                    <form id="contact-form" class="contact-form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name" class="form-label">Name *</label>
-                                <input type="text" id="name" name="name" class="form-input" placeholder="Your full name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email" class="form-label">Email *</label>
-                                <input type="email" id="email" name="email" class="form-input" placeholder="your.email@example.com" required>
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="subject" class="form-label">Subject</label>
-                            <input type="text" id="subject" name="subject" class="form-input" placeholder="What's this about?">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message" class="form-label">Message *</label>
-                            <textarea id="message" name="message" class="form-textarea" placeholder="Tell me about your project or opportunity..." rows="6" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="form-submit btn-gradient">
-                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <line x1="22" y1="2" x2="11" y2="13"/>
-                                <polygon points="22,2 15,22 11,13 2,9 22,2"/>
-                            </svg>
-                            Send Message
-                        </button>
-                    </form>
-                </div>
+    <h3 class="form-title">Send Me a Message</h3>
+    <form action="https://formspree.io/f/mdkdoqlz" method="POST" class="contact-form">
+        <div class="form-row">
+            <div class="form-group">
+                <label class="form-label" for="name">Full Name</label>
+                <input type="text" id="name" name="name" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="email">Email Address</label>
+                <input type="email" id="email" name="email" class="form-input" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" class="form-input">
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="message">Message</label>
+            <textarea id="message" name="message" class="form-textarea" required></textarea>
+        </div>
+        <button type="submit" class="form-submit btn-gradient">Send Message</button>
+    </form>
+</div>
             </div>
         </div>
     </section>
